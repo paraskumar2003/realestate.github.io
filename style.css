@@ -1,0 +1,410 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Telex', sans-serif;
+}
+.main_container{
+    width: 100%;
+    min-height: 100vh;
+}
+#main_video_player{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+#main_video_player video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay-center{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.my-btn:hover{
+    cursor: pointer;
+}
+.living-item-cover, .Dalgarno_Gardens, #Quaker_Estate{
+    display: none;
+}
+.living-item-cover, .Dalgarno_Gardens, .Quaker_Estate{
+    height: 60%;
+    width: 50%;
+}
+.living-item{
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+}
+.living-content{
+    padding: 3rem 1rem;
+    width: 100%;
+    margin: auto;
+}
+.living-content *{
+    /* width: 50%; */
+    height: 80%;
+}
+.living-item a{
+    padding: 5px 12px;
+}
+.points-list *{
+    width: 100%;
+    height: 20%;
+}
+.map-btn{
+    right: 0.5%;
+    top: 10%;
+}
+
+@keyframes sidebar_anim {
+    from {
+        right: -20%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+.sidebar{
+    width: 300px;
+    right: -20%;
+}
+.sidebar ul::-webkit-scrollbar{
+    display: none;
+}
+.sidebar ul li{
+    min-height: 7%;
+    width: 60%;
+    margin: 0;
+    color: black;
+    display: flex;
+    border-bottom: 1px solid #fff;
+}
+.sidebar ul li:hover{
+    cursor: pointer;
+}
+.sidebar ul li p{
+    margin:15px 0 0 10px;
+    font-size: 105%;
+}
+
+.sidebar_open{
+    animation: sidebar_anim 0.5s ease 0s 1 normal;
+}
+.sidebar_close{
+    animation: sidebar_anim 0.5s ease 0s 1 reverse;
+}
+
+@keyframes mapshow_anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mapshow{
+    display: none;
+    opacity: 0;
+}
+.mapshow::-webkit-scrollbar{
+    display: none;
+}
+.mapshow_open{
+    animation: mapshow_anim 0.5s ease 0s 1 normal;
+}
+.mapshow_close{
+    animation: mapshow_anim 0.5s ease 0s 1 reverse;
+}
+
+#orien_error{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebar{
+        width:100%;
+        right: -100%;
+    }
+    .sidebar ul li{
+        width: 80%;
+    }
+    .sidebar ul li p{
+        font-size: 18px;
+    }
+    .living-item-cover, .Dalgarno_Gardens, .Quaker_Estate{
+        height: 60%;
+        width: 75%;
+    }
+    .map-btn{
+        top: 18%;
+    }
+    .points-list li{
+        font-size: 12px;
+    }
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn-container{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.btn-container .btn{
+    width: 45px;
+    height: 45px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.btn-container .btn-sidebar img{
+    width: 100%;
+    height: 100%;
+}
+.map-img{
+    width: 30px;
+    border-radius:50%;
+    height: 30px;
+    transform: translateX(-4px);
+}
+.btn-map,.btn-map:hover{
+    margin-top: 20px;
+    background-color: #fff;
+}
+.btn{
+    border-radius: 50%;
+}
+.btn-arrow,.btn-arrow:hover{
+    background-color: #000;
+    padding: 2px;
+}
+.info-btns{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+.container-fluid{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+.hero-text{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+}
+.hero-text h1{
+    font-size: 24px;
+    color: #1B1A1A;
+}
+.info-btns .btn-partial-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.info-btns .btn-partial-info img{
+    margin-right: 15px;
+    width: 25px;
+}
+.btn-sidebar{
+    padding: 0;
+}
+.living-item .living-content{
+    flex-direction: column;
+}
+.living-item .living-content .info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info .info-text h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 33px;
+    padding-left: 14%;
+}
+.info .info-text ul{
+    margin-top: 30px;
+    background-color: #D9D9D9;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+.info img{
+    width: 40%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.living-content a{
+    margin: 30px auto 10px;
+    text-align: center;
+}
+@media(max-width:768px){
+    .living-item .living-content .info{
+        flex-direction: column;
+    }
+    .info .info-text{
+        width: 100%;
+    }
+    .info img{
+        width: 90%;
+    }
+}
+#Quaker_Estate .living-item p{
+    margin-top: 20px;
+}
+.btn-sidebar-close{
+    top: 20px;
+    left: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.sidebar{
+    z-index: 111;
+}
+@media (max-width: 768px){
+    .living-content{
+        padding:2rem 1rem;
+        margin: 0;
+    }
+    .living-content .info .info-text ul{
+        font-size: 12px;
+        text-align: center;
+        list-style-position:inside;
+    }
+    #Quaker_Estate .living-item p{
+        margin-top:5px;
+    }
+    .living-content *{
+        height: auto;
+    }
+    .living-item {
+        position: relative;
+        height: 50vh;
+
+    } 
+    .living-content .info .info-text h3{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        text-align: center;
+        font-size: 24px;
+        width: 100%;
+    }
+    .living-content .info img{
+        position: absolute;
+        top: 80px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .living-content .info .info-text ul{
+        position: absolute;
+        top: 220px;
+        width: 90%;
+    }
+    .living-content a{
+        position: absolute;
+        font-weight: 600;
+        bottom: 20px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 8px 12px;
+    }
+    .living-item-cover .close-btn{
+        width: 35px;
+        height: 35px;
+        top: 11%;
+        left:5%;
+    }
+    #Quaker_Estate .close-btn{
+        top: 2%;
+        left: 3%;
+    }
+}
+.sidebar-headText{
+    font-size: 40px;
+    margin-top:10px;
+}
+
+@media (min-width: 768px) and (max-width: 1365px){
+    .living-item  .living-content{
+        position: relative;
+        height: 70%;
+    }
+    .living-item-cover .close-btn{
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        left: 10px;
+    }
+    .living-content *{
+        width: auto;
+        height: auto;
+    }
+    .info .info-text h3{
+        position: absolute;
+        top: 0px;
+        left: 20px;
+    }
+    .info .info-text ul{
+        padding:12px;
+        font-size: 12px;
+        list-style-position: inside;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .info img{
+        width: 45%;
+        position: absolute;
+        top: -5px;
+        right: 20px;
+    }
+    .info .info-text ul{
+        width: 43%;
+    }
+    .living-item-cover{
+        width: 70%;
+    }
+    .living-content a{
+        position: absolute;
+        bottom: -29px;
+        margin: 0 auto;
+        left: 38%;
+        padding: 5px 12px;
+        font-weight: 600;
+    }
+    #Quaker_Estate .living-item p{
+        margin: 8px;
+    }
+    #Quaker_Estate .living-item:nth-child(1){
+        font-size: 14px;
+        width: 90%;
+    }
+    .sidebar ul li{
+        min-height:auto;
+        width: 90%;
+    }
+
+}
+.rounded-5{
+    border-radius: 20px!important;
+}
