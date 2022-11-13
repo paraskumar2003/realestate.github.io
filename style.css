@@ -338,6 +338,9 @@ body{
         top: 2%;
         left: 3%;
     }
+    .container-fluid{
+        bottom: 70px;
+    }
 }
 .sidebar-headText{
     font-size: 40px;

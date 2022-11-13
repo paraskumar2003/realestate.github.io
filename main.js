@@ -85,6 +85,21 @@ const app = {
     current_item: "",
 }
 
+const list = ['82 Dalgarno Gardens',
+              'Hallway',
+              'Living Space',
+              'Kitchen',
+              'Garden',
+              'Downstairs',
+              'Guest Bedroom',
+              'Office',
+              'Master Bedroom',
+              'Upstairs Bathroom',
+              'Guest Bedroom Two',
+              'Quaker Estate',
+
+]
+
 const main_vid_player = document.getElementById("main_video_player");
 const orien_error = document.getElementById("orien_error");
 
@@ -177,7 +192,7 @@ function landscape_setting(){
 window.addEventListener('load', function () {
 
     Object.keys(app.items).forEach(item => {
-        sidebar_list.insertAdjacentHTML('beforeend', `<li onclick="shift_vid_time('${item}')">
+        sidebar_list.insertAdjacentHTML('beforeend', `<li class="guide-items" onclick="shift_vid_time('${item}')">
                                             <p>${item}</p>
                                         </li>`)
     })
@@ -205,7 +220,39 @@ window.addEventListener('load', function () {
 
 const sidebar = document.querySelector('.sidebar');
 const sidebarImg = document.querySelector('.btn-sidebar img');
-console.log(sidebarImg,sidebar.style.display === `block`);
 setInterval(()=>{
     sidebar.style.right === `0` ? sidebarImg.style.zIndex = `-11` : sidebarImg.style.zIndex = `11`;
 },100)
+
+
+
+setInterval(()=>{
+
+    const guideItems = document.querySelectorAll('.guide-items');
+    
+    guideItems.forEach((item)=>{
+        item.onclick = ()=>{
+            let sd_bar = document.querySelector('.sidebar');
+            sd_bar.classList.add('sidebar_close');
+            setTimeout(() => {
+                sd_bar.style.right = '-20%';
+                sd_bar.style.display = 'none';
+                sd_bar.classList.remove('sidebar_close');
+            }, 500);
+            shift_vid_time(item.childNodes[1].outerText)
+
+            
+        }
+    })
+    
+},1000)
+let arrowBtn = document.querySelector('.arrow');
+
+arrowBtn.onclick = ()=>{
+ list.forEach((item,i)=>{
+    console.log(item,i,open_item_btn.textContent);
+     if(item.trim() == open_item_btn.textContent.trim()){
+        shift_vid_time(list[i+1]);
+     }
+ })
+}
