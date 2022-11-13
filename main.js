@@ -174,7 +174,8 @@ function main_video_running(vid) {
 }
 
 function shift_vid_time(item) {
-    main_vid.currentTime = app.items[item].time;
+    console.log(item);
+    main_vid.currentTime = app.items[item.trim()].time;
 }
 
 function portrait_setting(){
