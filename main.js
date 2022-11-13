@@ -169,7 +169,7 @@ function main_video_running(vid) {
         app.current_item = "Quaker Estate";
     }
 
-    open_item_btn.innerHTML = `<img src="./assets/home-icon.png" alt=""> ${app.current_item}`;
+    open_item_btn.innerHTML = `<img class='list-icons' src="./parts/${app.current_item}.png" alt=""> ${app.current_item}`;
 
 }
 
