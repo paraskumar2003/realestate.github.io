@@ -193,7 +193,7 @@ window.addEventListener('load', function () {
 
     Object.keys(app.items).forEach(item => {
         sidebar_list.insertAdjacentHTML('beforeend', `<li class="guide-items" onclick="shift_vid_time('${item}')">
-                                            <p>${item}</p>
+                                            <p><img class='list-icons' src='./parts/${item}.png' alt='' > ${item}</p>
                                         </li>`)
     })
 
