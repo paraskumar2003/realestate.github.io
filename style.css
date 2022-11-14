@@ -303,7 +303,7 @@ body{
     }
     .living-item {
         position: relative;
-        height: 50vh;
+        height: 55vh;
 
     } 
     .living-content .info .info-text h3{
@@ -336,8 +336,8 @@ body{
     .living-item-cover .close-btn{
         width: 35px;
         height: 35px;
-        top: 11%;
-        left:5%;
+        top: 25px;
+        left:5px;
     }
     #Quaker_Estate .close-btn{
         top: 2%;
@@ -421,16 +421,6 @@ body{
     height: 20px;
     margin-right:5px ;
 }
-
-
-
-/* this is to be removed later */
-.cont{
-    display: none;
-}
-.hide-map{
-    display: none;
-}
 @media (min-width: 600px) and (max-width: 1024px){
     .living-content{
        padding: 1rem;
@@ -439,3 +429,18 @@ body{
        margin: 10px auto 10px;
     }
    }
+
+
+
+
+
+   /* this is to be removed later */
+.cont{
+    display: none;
+}
+.hide-map{
+    display: none;
+}
+.btn-map{
+    display: none;
+}
