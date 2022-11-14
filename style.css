@@ -5,6 +5,7 @@
 body{
     width: 100%;
     min-height: 100vh;
+    max-height: 100vh;
     font-family: 'Telex', sans-serif;
 }
 .main_container{
@@ -320,7 +321,7 @@ body{
     }
     .living-content .info .info-text ul{
         position: absolute;
-        top:45%;
+        top:55%;
         width: 90%;
     }
     .living-content a{
