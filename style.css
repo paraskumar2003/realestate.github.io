@@ -83,7 +83,6 @@ body{
     display: none;
 }
 .sidebar ul li{
-    min-height: 7%;
     width: 80%;
     margin: 0;
     color: black;
