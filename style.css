@@ -260,7 +260,7 @@ body{
     margin: 30px auto 10px;
     text-align: center;
 }
-@media(max-width:768px){
+@media(max-width:600px){
     .living-item .living-content .info{
         flex-direction: column;
     }
