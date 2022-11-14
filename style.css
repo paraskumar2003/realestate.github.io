@@ -314,13 +314,13 @@ body{
     }
     .living-content .info img{
         position: absolute;
-        top: 80px;
+        top: 70px;
         width: 90%;
         margin: 0 auto;
     }
     .living-content .info .info-text ul{
         position: absolute;
-        top: 220px;
+        top: 200px;
         width: 90%;
     }
     .living-content a{
