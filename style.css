@@ -5,7 +5,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    max-height: 100vh;
+    max-height: 125vh;
     overflow: hidden;
     font-family: 'Telex', sans-serif;
 }
@@ -273,8 +273,10 @@ body{
         width: 90%;
     }
 }
-#Quaker_Estate .living-item p{
-    margin-top: 20px;
+#Quaker_Estate .living-item p.first{
+    margin-top: 15px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
 }
 .btn-sidebar-close{
     top: 20px;
@@ -295,9 +297,6 @@ body{
         text-align: center;
         list-style-position:inside;
     }
-    #Quaker_Estate .living-item p{
-        margin-top:5px;
-    }
     .living-content *{
         height: auto;
     }
@@ -306,6 +305,14 @@ body{
         height: 55vh;
 
     } 
+    #Quaker_Estate .living-item p.second{
+        margin-top: 5%;
+        width: 90%;
+    }
+    #Quaker_Estate .living-item a{
+        margin-top: 10px;
+    }
+
     .living-content .info .info-text h3{
         position: absolute;
         top: 20px;
@@ -400,8 +407,8 @@ body{
         padding: 5px 12px;
         font-weight: 600;
     }
-    #Quaker_Estate .living-item p{
-        margin: 8px;
+    #Quaker_Estate .living-item p.second{
+        margin-top:8px;
     }
     #Quaker_Estate .living-item:nth-child(1){
         font-size: 14px;
