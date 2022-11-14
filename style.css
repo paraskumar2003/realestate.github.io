@@ -79,6 +79,7 @@ body{
 
 .sidebar{
     width: 300px;
+    padding-bottom: 20px;
     right: -20%;
 }
 .sidebar ul::-webkit-scrollbar{
@@ -434,6 +435,9 @@ body{
     }
     .living-content a{
        margin: 10px auto 10px;
+    }
+    .living-item-cover{
+        height: 250px;
     }
    }
 
