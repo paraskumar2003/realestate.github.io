@@ -283,7 +283,7 @@ body{
 .sidebar{
     z-index: 111;
 }
-@media (max-width: 768px){
+@media (max-width: 600px){
     .living-content{
         padding:2rem 1rem;
         margin: 0;
