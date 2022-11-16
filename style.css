@@ -61,7 +61,7 @@ body{
 .living-item a{
     padding: 5px 12px;
 }
-.living-item img{
+.living-item-cover img{
     z-index: 222;
 }
 .points-list *{
