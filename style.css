@@ -449,6 +449,9 @@ body{
     .living-item-cover{
         height: 260px;
     }
+    .container-fluid{
+        bottom: 70px;
+    }
    }
 
 
