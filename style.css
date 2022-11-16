@@ -183,14 +183,17 @@ body{
     height: 100%;
 }
 .map-img{
-    width: 30px;
-    border-radius:50%;
-    height: 30px;
-    transform: translateX(-4px);
+    width: 28px;
+    border-radius:0;
+    height: 28px;
 }
 .btn-map,.btn-map:hover{
     margin-top: 20px;
+    padding: 2px;
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn{
     border-radius: 50%;
@@ -355,6 +358,11 @@ body{
     .container-fluid{
         bottom: 70px;
     }
+    .btn-container{
+        bottom: 150px;
+        top: auto;
+        flex-direction: column-reverse;
+    }
 }
 .sidebar-headText{
     font-size: 40px;
@@ -447,12 +455,50 @@ body{
 
 
    /* this is to be removed later */
+/* .cont{
+    display: none;
+} */
+.cont-container{
+    z-index: 1111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cont{
-    display: none;
+    height: 70%;
+    width: 90%;
+    position: relative;
 }
-.hide-map{
-    display: none;
+.cont .inner-container, .cont .inner-container img{
+    z-index: 1111;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s all ease;
 }
-.btn-map{
-    display: none;
+.cont .inner-container{
+    border-radius: 20px;
+    position: absolute;
+    overflow: scroll;
 }
+.cont .hide-map{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1111;
+}
+.inner-container::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+@media(min-width:768px){
+    .cont{
+        width: 60%;
+    }
+    .cont .inner-container img:hover{
+        transform: scale(1.3);
+    }
+    .btn-sidebar img{
+        top: 0;
+    }
+}
+

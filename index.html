@@ -52,7 +52,7 @@
                                 sd_bar.classList.remove('sidebar_open');
                             }, 500);
             
-                        })()" src="./assets/hamburger.png" class="my-btn position-absolute" style="top:0;left:0;width:45px;height:45px;z-index:1;" 
+                        })()" src="./assets/hamburger.png" class="my-btn position-absolute" style="left:0;width:45px;height:45px;z-index:1;" 
                             alt="">
                     </button>
                     <button class="btn btn-map">
@@ -97,64 +97,19 @@
                 <h1>Quaker Estate</h1>
             </div>
             
-            <!-- <img onclick="(function(){
 
-                let sd_bar = document.querySelector('.sidebar');
-                console.log(sd_bar);
-                sd_bar.style.display = 'initial';
-                sd_bar.classList.add('sidebar_open');
-                setTimeout(() => {
-                    sd_bar.style.right = '0%'
-                    sd_bar.classList.remove('sidebar_open');
-                }, 500);
-
-            })()" src="./assets/hamburger.png" class="my-btn position-absolute" height="50px" style="right: 30%;top: 15%;"
-                alt=""> -->
-            <!-- <img onclick="(function(){
-
-                let mapshow = document.querySelector('.mapshow');
-                if (mapshow.style.display == 'initial'){
-                    mapshow.classList.add('mapshow_close');
-                    setTimeout(() => {
-                        mapshow.style.opacity = 0;
-                        mapshow.style.display = 'none';
-                        mapshow.classList.remove('mapshow_close');
-                    }, 500);
-                }else{
-                    mapshow.style.display = 'initial';
-                    mapshow.classList.add('mapshow_open');
-                    setTimeout(() => {
-                        mapshow.style.opacity = 1;
-                        mapshow.classList.remove('mapshow_open');
-                    }, 500);
-                }
-
-            })()" src="./assets/map.png" class="my-btn position-absolute map-btn" height="50px" alt=""> -->
-
-            <div class="mapshow overlay-center overflow-scroll" style="height: 95%;width: 60%;">
-                <div class="h-100 w-100 position-relative">
+            <div class="mapshow overlay-center overflow-scroll">
+                <div class="h-100 w-100 cont-container">
                     <!-- <img src="Images/map_show.png" style="height: 200%;" class="w-100" alt=""> -->
 
 
 
                           
                     <div class="cont">
-                        <div class="btn" style="padding-top: 12px;">
-                            <img height="25px" width="25px" src="./Images/map_show.png" style="background-color: black;" alt="">
-                        </div>
-                        <div class="btn" style="  left: 35%;">
-                            <h1 style="font-size: 20px; font-weight: 400; font-family: 'Telex', sans-serif; color: #FFFFFF;">Scroll to see the entire map</h1>
-                        </div>
+                        
                     <div class="inner-container">
-                        <img class="imagee" height="450px" width="720px" src="./Images/map_show.png" alt=""  > 
+                        <img class="imagee" src="./Images/map_show.png" alt=""  > 
                     </div>
-                </div>
-
-
-
-
-
-
                     <img onclick="(function(){
                         let mapshow = document.querySelector('.mapshow');
                         mapshow.classList.add('mapshow_close');
@@ -164,6 +119,14 @@
                             mapshow.classList.remove('mapshow_close');
                         }, 500);
                     })()" src="./assets/cross.png" class=" hide-map my-btn position-absolute" height="30px" style="top: 1%;right: 1%;" alt="">
+                   </div>
+
+
+
+
+
+
+                    
                 </div>
             </div>
 
