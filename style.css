@@ -6,7 +6,7 @@ body{
     width: 100%;
     min-height: 100vh;
     max-height: 125vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Telex', sans-serif;
 }
 .main_container{
