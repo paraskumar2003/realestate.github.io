@@ -30,6 +30,7 @@ body{
     left: 0;
     right: 0;
     margin: auto;
+    z-index: 111;
 }
 .my-btn:hover{
     cursor: pointer;
@@ -59,6 +60,9 @@ body{
 }
 .living-item a{
     padding: 5px 12px;
+}
+.living-item img{
+    z-index: 222;
 }
 .points-list *{
     width: 100%;
